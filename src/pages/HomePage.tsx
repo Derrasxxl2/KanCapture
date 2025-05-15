@@ -3,6 +3,7 @@ import React from 'react';
 import Layout from '../components/layout/Layout';
 import ProjectGrid from '../components/projects/ProjectGrid';
 import { Project } from '../types';
+import { motion } from 'framer-motion';
 
 const projects: Project[] = [
   {
@@ -101,6 +102,32 @@ const HomePage: React.FC = () => {
   return (
     <Layout>
       <div className="pt-20">
+        {/* Banner de ancho completo */}
+        <div className="w-full h-[70vh] relative mb-16">
+          <img 
+            src="/lovable-uploads/d68f7b25-23b5-437a-809c-096b9405242a.png" 
+            alt="Fran Mesa Construcción" 
+            className="w-full h-full object-cover" 
+          />
+        </div>
+        
+        {/* Texto introductorio */}
+        <motion.div 
+          className="container mx-auto px-6 mb-20"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}
+        >
+          <h2 className="text-xl md:text-2xl uppercase tracking-wider font-light mb-6">Sobre Fran Mesa</h2>
+          <div className="max-w-3xl text-sm md:text-base text-gray-700 font-light space-y-4">
+            <p>Fran Mesa es una constructora especializada en proyectos de arquitectura contemporánea de alto nivel.</p>
+            <p>Nuestro enfoque combina precisión técnica, estética minimalista y una ejecución impecable.</p>
+            <p>Trabajamos mano a mano con estudios de arquitectura y clientes particulares para materializar espacios únicos, funcionales y atemporales.</p>
+            <p>Nuestro compromiso con la calidad y el detalle nos convierte en una referencia dentro del sector de la construcción moderna.</p>
+          </div>
+        </motion.div>
+
+        {/* Cuadrícula de proyectos */}
         <ProjectGrid projects={projects} />
       </div>
     </Layout>

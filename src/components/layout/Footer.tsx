@@ -11,16 +11,14 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-xs uppercase tracking-wider mb-4 font-light">Studio</h3>
             <address className="not-italic text-sm text-gray-600">
-              <p>Fran Silvestre Arquitectos</p>
-              <p>Calle Doctor Manuel Candela 26, 2</p>
-              <p>46021 Valencia, Spain</p>
+              <p>Fran Mesa</p>
             </address>
           </div>
           <div>
-            <h3 className="text-xs uppercase tracking-wider mb-4 font-light">Contact</h3>
+            <h3 className="text-xs uppercase tracking-wider mb-4 font-light">Contacto</h3>
             <p className="text-sm text-gray-600">
-              <a href="tel:+34963410491" className="hover-link">+34 963 410 491</a><br />
-              <a href="mailto:info@fransilvestrearquitectos.com" className="hover-link">info@fransilvestrearquitectos.com</a>
+              <a href="tel:+34605311989" className="hover-link">Teléfono: 605311989</a><br />
+              <a href="mailto:fran@acaravista.com" className="hover-link">Correo: fran@acaravista.com</a>
             </p>
           </div>
           <div>
@@ -39,10 +37,10 @@ const Footer: React.FC = () => {
           </div>
         </div>
         <div className="mt-12 text-xs text-gray-500">
-          <p>&copy; {new Date().getFullYear()} Fran Silvestre Arquitectos. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Fran Mesa. All rights reserved.</p>
           <p className="mt-1">
-            <Link to="/privacy-policy" className="hover-link mr-4">Privacy Policy</Link>
-            <Link to="/legal-notice" className="hover-link">Legal Notice</Link>
+            <Link to="/privacy-policy" className="hover-link mr-4">Política de Privacidad</Link>
+            <Link to="/legal-notice" className="hover-link">Aviso Legal</Link>
           </p>
         </div>
       </div>
