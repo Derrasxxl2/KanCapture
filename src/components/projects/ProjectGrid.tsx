@@ -24,7 +24,7 @@ const ProjectGrid: React.FC<ProjectGridProps> = ({ projects }) => {
       variants={container}
       initial="hidden"
       animate="show"
-      className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0.5"
+      className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0.5 mb-16"
     >
       {projects.map((project) => (
         <ProjectCard key={project.id} project={project} />

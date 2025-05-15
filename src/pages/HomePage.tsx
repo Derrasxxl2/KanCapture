@@ -103,23 +103,23 @@ const HomePage: React.FC = () => {
     <Layout>
       <div className="pt-20">
         {/* Banner de ancho completo */}
-        <div className="w-full h-[70vh] relative mb-16">
+        <div className="w-full h-[80vh] relative mb-16">
           <img 
-            src="/lovable-uploads/d68f7b25-23b5-437a-809c-096b9405242a.png" 
+            src="/lovable-uploads/b3960262-3aed-4507-9511-bfe8a2a38d3b.png" 
             alt="Fran Mesa Construcción" 
             className="w-full h-full object-cover" 
           />
         </div>
         
-        {/* Texto introductorio */}
+        {/* Texto introductorio con mejor diseño */}
         <motion.div 
-          className="container mx-auto px-6 mb-20"
+          className="container mx-auto px-6 mb-24 flex flex-col items-center justify-center"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}
         >
-          <h2 className="text-xl md:text-2xl uppercase tracking-wider font-light mb-6">Sobre Fran Mesa</h2>
-          <div className="max-w-3xl text-sm md:text-base text-gray-700 font-light space-y-4">
+          <h2 className="text-xl md:text-3xl uppercase tracking-wider font-light mb-10 text-center">Sobre Fran Mesa</h2>
+          <div className="max-w-3xl text-sm md:text-base text-gray-700 font-light space-y-6 text-center leading-relaxed">
             <p>Fran Mesa es una constructora especializada en proyectos de arquitectura contemporánea de alto nivel.</p>
             <p>Nuestro enfoque combina precisión técnica, estética minimalista y una ejecución impecable.</p>
             <p>Trabajamos mano a mano con estudios de arquitectura y clientes particulares para materializar espacios únicos, funcionales y atemporales.</p>

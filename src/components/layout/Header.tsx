@@ -13,7 +13,7 @@ const Header: React.FC<HeaderProps> = ({ toggleMenu, isMenuOpen }) => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white bg-opacity-95 py-4 px-6 flex justify-between items-center border-b border-gray-100">
       <div className="flex items-center">
         <Link to="/" className="text-lg tracking-tight uppercase font-light">
-          Fran Silvestre Arquitectos
+          Fran Mesa
         </Link>
       </div>
       <button 
